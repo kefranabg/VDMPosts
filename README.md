@@ -20,7 +20,7 @@ $ npm install mocha -g
 ```
 
 ### Install dependencies
-Go to the root of the project and user the following command line :
+Go to the root of the project and use the following command line :
 ```sh
 $ npm install
 ```
@@ -94,7 +94,7 @@ Output :
 Unit tests can be run with the following command :
 
 ```sh
-$ grunt serve
+$ grunt test
 ```
 
 If you want to run a test one at a time, you can use the following command :
@@ -122,6 +122,4 @@ The application is divided in 4 main parts :
 
 * [scripts]
 
-    This folder contains script that allows to :
-        * Delete all posts from the database
-        * Launch the transfer between VDM website and the database
+    This folder contains script that allows to delete all posts from the database and launch the transfer between VDM website and the database
