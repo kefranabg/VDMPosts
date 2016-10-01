@@ -106,29 +106,22 @@ $ mocha <name-of-the-test-file>
 
 The application is divided in 4 main parts :
 
-* API
-
-    This api folder has the following structure :
-    - [api]
-        -[controllers]
-        -[models]
-        -[routes]
+* [api]
 
     - The controllers folder contains js files that will build the CRUD requests.
     - The models folder contains js files that will define a mongodb document structure.
     - The routes folder contains js files that will defines the routes of the REST api.
 
-* test
+* [tests]
 
     This folder contains js files needed to run unit tests.
 
-* vdm-data
+* [vdm-data]
 
     This folder contains js files needed to extract and parse the data from the VDM website.
 
-* scripts
+* [scripts]
 
     This folder contains script that allows to :
-        - Delete all posts from the database
-        - Launch the transfer between VDM website and the database
-
+        * Delete all posts from the database
+        * Launch the transfer between VDM website and the database
