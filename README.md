@@ -127,5 +127,3 @@ The application is divided in 5 parts :
 * [config]
 
     This folder contains all configurations like the database uri, express settings ...
-
-
