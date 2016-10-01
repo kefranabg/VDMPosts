@@ -97,6 +97,8 @@ Unit tests can be run with the following command :
 $ grunt test
 ```
 
+/!\ Running 'grunt test' will clear the database BEFORE and AFTER the tests /!\
+
 If you want to run a test one at a time, you can use the following command :
 
 ```sh
