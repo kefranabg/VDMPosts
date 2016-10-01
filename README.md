@@ -1,7 +1,7 @@
 # VDMPosts
-This project provide a tool and a REST api allowing to do the following :
-* Get the 200 last posts of the VDM website (http://www.viedemerde.fr/) and store them to a Mongo database
-* Manipulate the posts through a REST api
+This project provides a tool and a REST api allowing to do the following :
+* Get the 200 last posts of the VDM website (http://www.viedemerde.fr/) and store them to a Mongo database.
+* Manipulate the posts through a REST api.
 
 # Environment Required
 * Nodejs
@@ -20,23 +20,26 @@ $ npm install mocha -g
 ```
 
 ### Install dependencies
+Go to the root of the project and user the following command line :
 ```sh
 $ npm install
 ```
 
-# Scan VDM last posts
+# Features
+
+### Scan VDM last posts
 ```sh
 $ grunt get-posts
 ```
 This will retrieve the 200 last posts from http://www.viedemerde.fr/ and store them to the local database.
 
-# Run the REST api
+### Run the REST api
 ```sh
 $ grunt serve
 ```
-This will run the rest API.
+This will run the REST api.
 
-# Remove all posts
+### Remove all posts
 You can delete all the posts by using the following command :
 ```sh
 $ grunt delete-posts
@@ -68,7 +71,7 @@ Several parameters are available :
  * ``to=YYYY-MM-DD`` allow to get posts until this date
  * ``author=XXXXX`` allow to get posts from this author
 
-You can access one post can be acess with the following route :
+You can access one post with the following route :
 ``/api/posts/<id>``
 
 Output :
@@ -94,9 +97,38 @@ Unit tests can be run with the following command :
 $ grunt serve
 ```
 
-This will run each unit test.
 If you want to run a test one at a time, you can use the following command :
 
 ```sh
 $ mocha <name-of-the-test-file>
 ```
+# App architecture
+
+The application is divided in 4 main parts :
+
+* API
+
+    This api folder has the following structure :
+    - [api]
+        -[controllers]
+        -[models]
+        -[routes]
+
+    - The controllers folder contains js files that will build the CRUD requests.
+    - The models folder contains js files that will define a mongodb document structure.
+    - The routes folder contains js files that will defines the routes of the REST api.
+
+* test
+
+    This folder contains js files needed to run unit tests.
+
+* vdm-data
+
+    This folder contains js files needed to extract and parse the data from the VDM website.
+
+* scripts
+
+    This folder contains script that allows to :
+        - Delete all posts from the database
+        - Launch the transfer between VDM website and the database
+
