@@ -34,14 +34,14 @@ $ grunt serve
 This will run the REST api.
 
 ### Scan VDM last posts
-/!\ The REST api must be running to run use this command. /!\
+/!\ The REST api must be running to use this command. /!\
 ```sh
 $ grunt get-posts
 ```
 This will retrieve the 200 last posts from http://www.viedemerde.fr/ and store them to the local database.
 
 ### Remove all posts
-/!\ The REST api must be running to run use this command. /!\
+/!\ The REST api must be running to use this command. /!\
 ```sh
 $ grunt delete-posts
 ```
