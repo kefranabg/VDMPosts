@@ -20,7 +20,7 @@ module.exports = function(app) {
         .get(posts.read);
 
     app.route('/api/create-one-post')
-        .post(posts.create)
+        .post(posts.create);
 
     // Finish by binding the Post middleware
     app.param('postId', posts.postByID);

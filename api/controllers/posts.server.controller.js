@@ -70,7 +70,7 @@ exports.list = function(req, res) {
  * Show the current Post
  */
 exports.read = function(req, res) {
-    res.jsonp(req.post);
+    res.jsonp({post: req.post});
 };
 
 /**
