@@ -27,23 +27,25 @@ $ npm install
 
 # Features
 
-### Scan VDM last posts
-```sh
-$ grunt get-posts
-```
-This will retrieve the 200 last posts from http://www.viedemerde.fr/ and store them to the local database.
-
 ### Run the REST api
 ```sh
 $ grunt serve
 ```
 This will run the REST api.
 
+### Scan VDM last posts
+/!\ The REST api must be running to use this command. /!\
+```sh
+$ grunt get-posts
+```
+This will retrieve the 200 last posts from http://www.viedemerde.fr/ and store them to the local database.
+
 ### Remove all posts
-You can delete all the posts by using the following command :
+/!\ The REST api must be running to use this command. /!\
 ```sh
 $ grunt delete-posts
 ```
+This will delete all the posts.
 
 # Use the REST api
 The posts can be access on localhost with the default port 3000. You can modify the port by modifying the environment variable 'PORT'.
@@ -96,6 +98,8 @@ Unit tests can be run with the following command :
 ```sh
 $ grunt test
 ```
+
+/!\ Running 'grunt test' will clear the database BEFORE and AFTER the tests /!\
 
 If you want to run a test one at a time, you can use the following command :
 
