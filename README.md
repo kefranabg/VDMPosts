@@ -25,6 +25,10 @@ Go to the root of the project and use the following command line :
 $ npm install
 ```
 
+# Config
+
+Database settings are available in ``/config/config.js``
+
 # Features
 
 ### Run the REST api
@@ -38,7 +42,7 @@ This will run the REST api.
 ```sh
 $ grunt get-posts
 ```
-This will retrieve the 200 last posts from http://www.viedemerde.fr/ and store them to the local database.
+This will retrieve the 200 last posts from http://www.viedemerde.fr/ and store them to the database.
 
 ### Remove all posts
 /!\ The REST api must be running to use this command. /!\
