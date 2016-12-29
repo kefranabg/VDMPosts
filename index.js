@@ -26,6 +26,6 @@ var server  = require('http').Server(app);
 server.listen(config.port);
 
 // Logging initialization
-console.log('--');
+console.log('-');
 console.log(chalk.green('Port:\t\t\t\t' + config.port));
 console.log(chalk.green('Database:\t\t\t' + config.db.uri));
